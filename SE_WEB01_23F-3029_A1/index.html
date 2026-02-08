@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniyal Haider">
+    <meta name="description" content="AETHER VOYAGES - Luxury Space Travel Agency | Web Technologies Assignment">
+    <title>AETHER VOYAGES | Luxury Space Travel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Phase 1: Launch Loader Overlay -->
+    <div class="loader-overlay">
+        <div class="solar-system">
+            <div class="sun"></div>
+            <div class="orbit orbit-1">
+                <div class="planet planet-1"></div>
+            </div>
+            <div class="orbit orbit-2">
+                <div class="planet planet-2"></div>
+            </div>
+            <div class="orbit orbit-3">
+                <div class="planet planet-3"></div>
+            </div>
+            <div class="orbit orbit-4">
+                <div class="planet planet-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phase 2: Glitch Hero Section -->
+    <section class="hero-section">
+        <h1 class="glitch-title" data-text="ESCAPE REALITY">ESCAPE REALITY</h1>
+    </section>
+
+    <!-- Phase 3: Destinations Grid (3D Flip Cards) -->
+    <section class="destinations-section">
+        <h2 class="section-title">CHOOSE YOUR DESTINATION</h2>
+        <div class="destinations-grid">
+
+            <!-- Mars Card -->
+            <div class="card-container">
+                <input type="checkbox" id="flip-mars" class="flip-checkbox">
+                <label for="flip-mars" class="card">
+                    <div class="card-inner">
+                        <!-- Front -->
+                        <div class="card-front">
+                            <img src="images/mars.png" alt="Mars" class="planet-image">
+                            <div class="card-overlay">
+                                <h3 class="planet-name">MARS</h3>
+                                <p class="planet-subtitle">The Red Planet</p>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="card-back">
+                            <h3 class="trip-title">MARS EXPEDITION</h3>
+                            <div class="trip-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Duration</span>
+                                    <span class="detail-value">7 Months</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Temperature</span>
+                                    <span class="detail-value">-63°C</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Distance</span>
+                                    <span class="detail-value">225M km</span>
+                                </div>
+                            </div>
+                            <button class="book-button">BOOK TICKET</button>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Europa Card -->
+            <div class="card-container">
+                <input type="checkbox" id="flip-europa" class="flip-checkbox">
+                <label for="flip-europa" class="card">
+                    <div class="card-inner">
+                        <!-- Front -->
+                        <div class="card-front">
+                            <img src="images/europa.png" alt="Europa" class="planet-image">
+                            <div class="card-overlay">
+                                <h3 class="planet-name">EUROPA</h3>
+                                <p class="planet-subtitle">Jupiter's Moon</p>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="card-back">
+                            <h3 class="trip-title">EUROPA VOYAGE</h3>
+                            <div class="trip-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Duration</span>
+                                    <span class="detail-value">3 Years</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Temperature</span>
+                                    <span class="detail-value">-160°C</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Distance</span>
+                                    <span class="detail-value">628M km</span>
+                                </div>
+                            </div>
+                            <button class="book-button">BOOK TICKET</button>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Titan Card -->
+            <div class="card-container">
+                <input type="checkbox" id="flip-titan" class="flip-checkbox">
+                <label for="flip-titan" class="card">
+                    <div class="card-inner">
+                        <!-- Front -->
+                        <div class="card-front">
+                            <img src="images/titan.png" alt="Titan" class="planet-image">
+                            <div class="card-overlay">
+                                <h3 class="planet-name">TITAN</h3>
+                                <p class="planet-subtitle">Saturn's Moon</p>
+                            </div>
+                        </div>
+                        <!-- Back -->
+                        <div class="card-back">
+                            <h3 class="trip-title">TITAN ADVENTURE</h3>
+                            <div class="trip-details">
+                                <div class="detail-item">
+                                    <span class="detail-label">Duration</span>
+                                    <span class="detail-value">7 Years</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Temperature</span>
+                                    <span class="detail-value">-179°C</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Distance</span>
+                                    <span class="detail-value">1.4B km</span>
+                                </div>
+                            </div>
+                            <button class="book-button">BOOK TICKET</button>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Phase 4: FAQ Accordion Section -->
+    <section class="faq-section">
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faq-container">
+
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq-1" class="faq-checkbox">
+                <label for="faq-1" class="faq-question">
+                    <span class="question-text">What training is required for space travel?</span>
+                    <span class="arrow">→</span>
+                </label>
+                <div class="faq-answer">
+                    <p>All passengers undergo a comprehensive 6-week training program covering zero-gravity adaptation,
+                        emergency protocols, and spacecraft operations. Our expert instructors ensure you're fully
+                        prepared for your cosmic journey.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq-2" class="faq-checkbox">
+                <label for="faq-2" class="faq-question">
+                    <span class="question-text">How long does the journey take?</span>
+                    <span class="arrow">→</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Journey duration varies by destination: Mars takes approximately 7 months, Europa requires 3
+                        years, and Titan adventures span 7 years. All trips include cryogenic sleep options for
+                        extended voyages.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq-3" class="faq-checkbox">
+                <label for="faq-3" class="faq-question">
+                    <span class="question-text">What amenities are included onboard?</span>
+                    <span class="arrow">→</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Our luxury spacecraft feature zero-gravity lounges, panoramic observation decks, gourmet dining
+                        with molecular gastronomy, private sleeping quarters, and state-of-the-art entertainment
+                        systems. Every journey is designed for maximum comfort.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq-4" class="faq-checkbox">
+                <label for="faq-4" class="faq-question">
+                    <span class="question-text">Is travel insurance included?</span>
+                    <span class="arrow">→</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Yes! All packages include comprehensive cosmic travel insurance covering medical emergencies,
+                        equipment malfunction, and unexpected cosmic events. Additional coverage options are available
+                        for extended missions.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq-5" class="faq-checkbox">
+                <label for="faq-5" class="faq-question">
+                    <span class="question-text">Can I cancel or reschedule my trip?</span>
+                    <span class="arrow">→</span>
+                </label>
+                <div class="faq-answer">
+                    <p>Cancellations made 12 months before departure receive a full refund. Rescheduling is available
+                        up to 6 months prior to launch, subject to availability and orbital alignment windows. Contact
+                        our mission control team for assistance.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Phase 5: Glass Morphism Payment Form -->
+    <section class="payment-section">
+        <div class="glass-form-container">
+            <h2 class="section-title">SECURE YOUR VOYAGE</h2>
+            <form class="payment-form">
+                <div class="input-group">
+                    <input type="text" id="card-number" class="form-input" placeholder=" " required>
+                    <label for="card-number" class="form-label">Card Number</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="card-name" class="form-input" placeholder=" " required>
+                    <label for="card-name" class="form-label">Cardholder Name</label>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input type="text" id="expiry" class="form-input" placeholder=" " required>
+                        <label for="expiry" class="form-label">Expiry (MM/YY)</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="cvv" class="form-input" placeholder=" " required>
+                        <label for="cvv" class="form-label">CVV</label>
+                    </div>
+                </div>
+                <button type="submit" class="purchase-button">
+                    <span class="button-text">PURCHASE TICKET</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Main Content (will be visible after loader fades) -->
+    <main class="main-content">
+        <h1>AETHER VOYAGES</h1>
+        <p>Your journey to the stars begins here...</p>
+    </main>
+
+    <!-- Footer Credits -->
+    <footer class="credits-footer">
+        <div class="credits-content">
+            <div class="credits-info">
+                <h4>AETHER VOYAGES</h4>
+                <p>Luxury Space Travel Agency</p>
+            </div>
+            <div class="credits-divider"></div>
+            <div class="credits-author">
+                <p><strong>Created by:</strong> Daniyal Haider</p>
+                <p><strong>Course:</strong> Web Technologies</p>
+                <p><strong>Assignment:</strong> Space Travel Website with HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
