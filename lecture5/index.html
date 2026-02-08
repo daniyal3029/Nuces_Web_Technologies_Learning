@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best Practice</title>
+</head>
+<body>
+
+    <h1>My Website</h1>
+
+<input id="n1" type="number" oninput="strCalc()">
+<input id="n2" type="number" oninput="strCalc()">
+<button onclick="calc()">Add</button>
+<p id="ans"></p>
+<br>
+<p id="count"></p><br>
+<p id="characterChanged"></p>
+<script>
+
+    let count = 0;
+  function calc() {
+    let a = Number(n1.value);
+    let b = Number(n2.value);
+    count++;
+    document.getElementById("count").innerText = "Button clicked " + count + " times";
+    if (a && b) {
+      ans.innerText = "Result: " + (a + b);
+    } else {
+      ans.innerText = "Please enter both numbers";
+    }
+  }
+  function strCalc(){
+    let a = n1.value;
+    let b = n2.value;
+    
+    document.getElementById("characterChanged").innerText = "Characters changed in input fields: " + (a.length + b.length);
+  }
+</script>
+
+</body>
+</html>
