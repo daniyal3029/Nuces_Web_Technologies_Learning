@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <input id="input" />
+    <div id="output"></div>
+    <script>
+      const cities = ["London", "Paris", "Berlin", "Rome", "Madrid"];
+      const out = document.getElementById("output");
+      input.oninput = () => {
+        let txt = input.value.toLowerCase();
+        out.innerHTML = cities
+          .filter((c) => c.toLowerCase().includes(txt))
+          .map((c) => `<p>${c}</p>`)
+          .join("");
+      };
+    </script>
+  </body>
+</html>

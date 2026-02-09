@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Shopping Cart</h2>
+    <div id="cart"></div>
+    <script>
+      const products = [
+        { itemName: "Book", price: 1500 },
+        { itemName: "Pen", price: 200 },
+        { itemName: "Notebook", price: 600 },
+      ];
+      let total = 0;
+      products.forEach((p) => (total += p.price));
+      document.getElementById("cart").innerHTML =
+        `<h4>Total Items: ${products.length}</h4><h4>Total Price: Rs ${total}</h4>`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Logs</h2>
+    <div id="view"></div>
+    <script>
+      const data = [
+        { message: "Login success", level: "info" },
+        { message: "Disk almost full", level: "warning" },
+        { message: "Database down", level: "error" },
+      ];
+      let html = "";
+      for (let d of data) {
+        let color =
+          d.level === "error"
+            ? "red"
+            : d.level === "warning"
+              ? "orange"
+              : "green";
+        html += `<div style="color:${color}">${d.message}</div>`;
+      }
+      document.getElementById("view").innerHTML = html;
+    </script>
+  </body>
+</html>

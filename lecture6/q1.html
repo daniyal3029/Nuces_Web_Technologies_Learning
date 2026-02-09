@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Products</h2>
+    <div id="products"></div>
+    <script>
+      const items = [
+        { name: "Phone", price: 90000 },
+        { name: "Charger", price: 3000 },
+        { name: "Headphones", price: 7000 },
+      ];
+      let html = "";
+      for (let i of items) {
+        html += `<p>${i.name} : Rs ${i.price}</p>`;
+      }
+      document.getElementById("products").innerHTML = html;
+    </script>
+  </body>
+</html>

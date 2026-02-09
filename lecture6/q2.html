@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Weekly Temperatures</h2>
+    <div id="result"></div>
+    <script>
+      const days = [33, 34, 27, 30, 29, 31, 38];
+      let high = 0;
+      let low = 0;
+      for (let i = 0; i < days.length; i++) {
+        if (days[i] > 30) high++;
+        else low++;
+      }
+      document.getElementById("result").innerHTML =
+        `<p>Hot Days: ${high}</p><p>Normal Days: ${low}</p>`;
+    </script>
+  </body>
+</html>
