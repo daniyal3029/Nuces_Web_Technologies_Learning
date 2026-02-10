@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>University Registration Form</h1>
+        <p>All fields are required. JavaScript validation applied.</p>
+    </header>
+
+    <main class="container">
+        <form id="regForm" class="form-grid" action="" novalidate>
+            <div class="form-column">
+                <div class="form-group">
+                    <label for="Name">Full Name</label>
+                    <input type="text" id="Name" name="Name" required pattern="[A-Za-z\\s]+">
+                    <div class="error" id="Name_error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required min="18" max="30">
+                    <div class="error" id="age_error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="rollnumber">Roll Number</label>
+                    <input placeholder="22F-0000" type="text" id="rollnumber" name="rollnumber" required
+                        pattern="^\\d{2}[A-Za-z]-\\d{4}$">
+                    <div class="error" id="rollnumber_error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="inline-controls">
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="error" id="gender_error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Skills</label>
+                    <div class="inline-controls">
+                        <input type="checkbox" name="skills[]" id="html" value="html">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="skills[]" id="css" value="css">
+                        <label for="css">CSS</label>
+                        <input type="checkbox" name="skills[]" id="javascript" value="javascript">
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                    <div class="error" id="skills_error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Register</button>
+                </div>
+            </div>
+
+            <div class="form-column">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error" id="email_error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phonenumber">Phone (Pakistan)</label>
+                    <input type="tel" id="phonenumber" name="phonenumber" required pattern="^03\\d{9}$"
+                        placeholder="03XXXXXXXXX">
+                    <div class="error" id="phonenumber_error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                    <div class="error" id="password_error" aria-live="polite"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="it">Information Technology</option>
+                        <option value="ee">Electrical Engineering</option>
+                    </select>
+                    <div class="error" id="department_error" aria-live="polite"></div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script>
+const f = document.getElementById("regForm");
+
+function err(id,msg){
+document.getElementById(id+"_error").textContent = msg;
+if(msg) document.getElementById(id)?.classList.add("invalid");
+}
+
+function clr(){
+f.querySelectorAll(".error").forEach(e=>e.textContent="");
+f.querySelectorAll(".invalid").forEach(e=>e.classList.remove("invalid"));
+}
+
+f.addEventListener("submit", e=>{
+clr();
+let bad = false;
+
+let v = id=>document.getElementById(id).value.trim();
+
+if(!v("Name") || !/^[A-Za-z\s]+$/.test(v("Name")))
+    err("Name","Enter valid name"), bad=true;
+
+let age = parseInt(v("age"));
+if(!age || age<18 || age>30)
+    err("age","Age 18-30 only"), bad=true;
+
+if(!/^\d{2}[A-Za-z]-\d{4}$/.test(v("rollnumber")))
+    err("rollnumber","Format: 22F-0000"), bad=true;
+
+if(!f.querySelector('input[name="gender"]:checked'))
+    document.getElementById("gender_error").textContent="Select gender", bad=true;
+
+if(f.querySelectorAll('input[name="skills[]"]:checked').length===0)
+    document.getElementById("skills_error").textContent="Pick a skill", bad=true;
+
+if(!/^\S+@\S+\.\S+$/.test(v("email")))
+    err("email","Invalid email"), bad=true;
+
+if(!/^03\d{9}$/.test(v("phonenumber")))
+    err("phonenumber","03XXXXXXXXX only"), bad=true;
+
+if(v("password").length<6)
+    err("password","Min 6 chars"), bad=true;
+
+if(!v("department"))
+    err("department","Select department"), bad=true;
+
+if(bad) e.preventDefault();
+});
+
+f.querySelectorAll("input,select").forEach(x=>{
+x.addEventListener("input",()=>{
+    let id=x.id;
+    let e=document.getElementById(id+"_error");
+    if(e) e.textContent="";
+    x.classList.remove("invalid");
+});
+});
+</script>
+</body>
+
+</html>
