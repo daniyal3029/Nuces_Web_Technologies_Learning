@@ -9,6 +9,7 @@ This repository contains my lecture-wise learning journey in web development, in
 - [Usage](#usage)
 - [Author](#author)
 - [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 A small static front-end project containing example pages for multiple lectures. Each lecture has its own HTML file and the shared stylesheet.
@@ -41,3 +42,6 @@ Daniyal Haider
 
 ## Contributing
 Contributions are welcome. Please submit a pull request with your changes and a brief description of the changes made.
+
+## License
+This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
