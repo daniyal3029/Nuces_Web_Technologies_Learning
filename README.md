@@ -41,7 +41,7 @@ python -m http.server 8000
 Daniyal Haider
 
 ## Contributing
-Contributions are welcome. Please submit a pull request with your changes and a brief description of the changes made.
+Contributions are welcome. Please submit a pull request with your changes and a brief description of the changes made. Additionally, please ensure that your changes follow standard professional guidelines for code quality and formatting.
 
 ## License
 This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
