@@ -17,7 +17,7 @@ A small static front-end project containing example pages for multiple lectures.
 ## Structure
 - [lecture1/index.html](lecture1/index.html) — Lecture 1 example
 - [lecture2/index2.html](lecture2/index2.html) — Lecture 2 example
-- [lecture3/index3.html](lecture3/index.html) — Lecture 3 example
+- [lecture3/index3.html](lecture3/index3.html) — Lecture 3 example
 - [lecture4/index.html](lecture4/index.html) — Lecture 4 example
 - [lecture5/index.html](lecture5/index.html) — Lecture 5 example
 - [lecture6/q1.html](lecture6/q1.html) — Lecture 6 example
@@ -41,7 +41,7 @@ python -m http.server 8000
 Daniyal Haider
 
 ## Contributing
-Contributions are welcome. Please submit a pull request with your changes and a brief description of the changes made. Additionally, please ensure that your changes follow standard professional guidelines for code quality and formatting.
+Contributions are welcome. Please submit a pull request with your changes and a brief description of the changes made. Additionally, please ensure that your changes follow standard professional guidelines for code quality and formatting. For more information, please see our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](CONTRIBUTING.md) files.
 
 ## License
 This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
