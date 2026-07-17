@@ -41,7 +41,7 @@ python -m http.server 8000
 Daniyal Haider
 
 ## Contributing
-Contributions are welcome. Please submit a pull request with your changes and a brief description of the changes made. Additionally, please ensure that your changes follow standard professional guidelines for code quality and formatting. For more information, please see our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](CONTRIBUTING.md) files.
+Contributions are welcome. Please submit a pull request with your changes and a brief description of the changes made. Additionally, please ensure that your changes follow standard professional guidelines for code quality and formatting. For more information, please see our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](CONTRIBUTING.md) files. Please also include a clear and concise commit message that follows the Conventional Commits format.
 
 ## License
 This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
