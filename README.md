@@ -45,3 +45,7 @@ Contributions are welcome. Please submit a pull request with your changes and a 
 
 ## License
 This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+## Badges
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![CSS](https://img.shields.io/badge/CSS-100%25-blue.svg)](https://www.w3schools.com/css/)
