@@ -10,6 +10,7 @@ This repository contains my lecture-wise learning journey in web development, in
 - [Author](#author)
 - [Contributing](#contributing)
 - [License](#license)
+- [Getting Started](#getting-started)
 
 ## Introduction
 A small static front-end project containing example pages for multiple lectures. Each lecture has its own HTML file and the shared stylesheet.
@@ -36,6 +37,12 @@ python -m http.server 8000
 ## Usage
 - Edit the HTML files under each `lecture` folder to update content.
 - Modify the respective `style.css` files to change site styling for each lecture.
+
+## Getting Started
+To get started with this project, follow these steps:
+1. Clone the repository using `git clone https://github.com/daniyal3029/Nuces_Web_Technologies_Learning.git`
+2. Open the project in your preferred code editor.
+3. Run the project by opening any of the lecture HTML files in your browser.
 
 ## Author
 Daniyal Haider
