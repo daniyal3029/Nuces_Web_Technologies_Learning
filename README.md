@@ -56,3 +56,6 @@ This repository is licensed under the MIT License. See [LICENSE](LICENSE) for de
 ## Badges
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![CSS](https://img.shields.io/badge/CSS-100%25-blue.svg)](https://www.w3schools.com/css/)
+
+## Code of Conduct
+Please note that this project adheres to the guidelines outlined in our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file. By participating in this project, you agree to abide by its terms.
