@@ -59,3 +59,6 @@ This repository is licensed under the MIT License. See [LICENSE](LICENSE) for de
 
 ## Code of Conduct
 Please note that this project adheres to the guidelines outlined in our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file. By participating in this project, you agree to abide by its terms.
+
+## Acknowledgments
+Special thanks to the open-source community for their support and contributions.
