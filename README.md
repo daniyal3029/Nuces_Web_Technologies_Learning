@@ -11,6 +11,7 @@ This repository contains my lecture-wise learning journey in web development, in
 - [Contributing](#contributing)
 - [License](#license)
 - [Getting Started](#getting-started)
+- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 A small static front-end project containing example pages for multiple lectures. Each lecture has its own HTML file and the shared stylesheet.
@@ -58,7 +59,7 @@ This repository is licensed under the MIT License. See [LICENSE](LICENSE) for de
 [![CSS](https://img.shields.io/badge/CSS-100%25-blue.svg)](https://www.w3schools.com/css/)
 
 ## Code of Conduct
-Please note that this project adheres to the guidelines outlined in our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file. By participating in this project, you agree to abide by its terms.
+Please note that this project adheres to the guidelines outlined in our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file. By participating in this project, you agree to abide by these guidelines.
 
 ## Acknowledgments
-Special thanks to the open-source community for their support and contributions.
+I would like to thank my instructors and peers for their guidance and support throughout my learning journey in web development.
